@@ -1,5 +1,5 @@
 {
-  "name": "Samba share",
+  "name": "Network share",
   "version": "9.2.0",
   "slug": "samba",
   "description": "Expose Home Assistant folders with SMB/CIFS",
@@ -9,7 +9,7 @@
   "boot": "auto",
   "init": false,
   "host_network": true,
-  "map": ["config:rw", "ssl:rw", "addons:rw", "share:rw", "backup:rw"],
+  "map": ["usbdrive:rw"],
   "options": {
     "workgroup": "WORKGROUP",
     "username": "homeassistant",
